@@ -2,9 +2,11 @@ import java.util.*;
 
 public class Photographer{
   private ArrayList<Printable> cameras;
+  private HashMap<String, Integer>journal;
 
   public Photographer(){
     this.cameras = new ArrayList<Printable>();
+    this.journal = new HashMap<String, Integer>();
   }
 
   public void addCamera(Printable printable){
@@ -30,5 +32,19 @@ public class Photographer{
     }
     return deets;
   }
+
+  public void journalEntry(String cameraName, Integer numOfPhotos){
+    this.journal.put(cameraName, numOfPhotos);
+  }
+
+  public int totalPhotosTaken(){
+    int photosTaken = 0;
+    for(Integer journal : this.journal.values()){
+      int x = journal;
+      photosTaken += x;
+    }
+    return photosTaken;
+  }
+  
 
 }

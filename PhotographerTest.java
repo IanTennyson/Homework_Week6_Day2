@@ -33,4 +33,12 @@ public class PhotographerTest{
     photographer.addCamera(digitalCamera);
     assertEquals("Real photographers do it in the dark..01 megapixels", photographer.cameraDeets());
   }
+
+  @Test
+  public void testingTotalPhotosTaken(){
+    photographer.journalEntry("Nikon", 20);
+    photographer.journalEntry("Cannon", 10);
+    
+    assertEquals(30, photographer.totalPhotosTaken());
+  }
 }
