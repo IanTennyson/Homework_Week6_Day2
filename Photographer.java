@@ -22,5 +22,13 @@ public class Photographer{
     return cameras.size();
   }
 
+  public String cameraDeets(){
+    String deets = "";
+    for(Printable printable : this.cameras){
+      String x = printable.printDetails();
+      deets += x;
+    }
+    return deets;
+  }
 
 }

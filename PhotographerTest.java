@@ -26,4 +26,11 @@ public class PhotographerTest{
     photographer.removeCamera();
     assertEquals(1, photographer.camerasCount());
   }
+
+  @Test
+  public void canPrintDetails(){
+    photographer.addCamera(analogCamera);
+    photographer.addCamera(digitalCamera);
+    assertEquals("Real photographers do it in the dark..01 megapixels", photographer.cameraDeets());
+  }
 }
