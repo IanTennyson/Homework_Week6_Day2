@@ -41,4 +41,12 @@ public class PhotographerTest{
     
     assertEquals(30, photographer.totalPhotosTaken());
   }
+
+  // @Test
+  // public void testingAllCameras(){
+  //   photographer.journalEntry("Nikon", 20);
+  //   photographer.journalEntry("Cannon", 10);
+    
+  //   assertEquals("NikonCannon", photographer.totalCameras());
+  // }
 }

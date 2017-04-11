@@ -45,6 +45,15 @@ public class Photographer{
     }
     return photosTaken;
   }
+
+  // public String totalCameras(){
+  //   String allCameras = "";
+  //   for(String journal : this.journal.key()){
+  //     String x = journal;
+  //     allCameras += x;
+  //   }
+  //   return allCameras;
+  // }
   
 
 }
